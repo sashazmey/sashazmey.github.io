@@ -4,8 +4,12 @@ myImage.onclick = function () {
   var mySrc = myImage.getAttribute("src");
   if (mySrc === "images/charge.png") {
     myImage.setAttribute("src", "images/dead.png");
-  } else {
-    myImage.setAttribute("src", "images/charge.png");
+  } 
+  else if (mySrc === "images/dead.png"){ 
+  window.close();   
+  }
+  else {
+	  myImage.setAttribute("src", "images/charge.png");
   }
 };
 
